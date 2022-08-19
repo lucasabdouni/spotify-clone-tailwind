@@ -1,6 +1,9 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  future: {
+    // removeDeprecatedGapUtilities: true,
+    // purgeLayersByDefault: true,
+  },
+  purge: [],
   theme: {
     extend: {
       spacing: {
@@ -13,8 +16,8 @@ module.exports = {
         'green-main': '#1ED760',
       },
       backgroundImage: (theme) => ({
-        'spotify-theme': "url('/assets/bursts.svg')",
-        'spotify-theme-mobile': "url('/assets/bursts-mobile.svg')",
+        'spotify-theme': "url('/img/bursts.svg')",
+        'spotify-theme-mobile': "url('/img/bursts-mobile.svg')",
       }),
       backgroundSize: {
         '175%': '175%',
@@ -29,5 +32,6 @@ module.exports = {
       },
     },
   },
+  variants: {},
   plugins: [],
 };
